@@ -1,0 +1,731 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+ /* ==========================================================================
+ Global Styles
+ ========================================================================== */
+
+body {
+    padding-top: 54px;
+    font-family: "roboto";
+}
+
+
+
+
+/* ==========================================================================
+Text Styles
+========================================================================== */
+
+h1{
+  font-family: "Open Sans";
+  color: #774BAF;
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 3.7rem;
+  letter-spacing: 1px;
+
+}
+
+h2{
+  font-family: "Open Sans";
+  color: #774BAF;
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 3.7rem;
+  letter-spacing: 1px;
+
+}
+
+h3{  font-family: "Roboto";
+  color: #774BAF;
+  font-size: 21px;
+  text-align:right;
+  font-weight: 400;
+  letter-spacing: .5px;
+
+}
+
+h4{
+  font-family: "Roboto";
+  color: #774BAF;
+  font-size: 21px;
+  text-align:right;
+  font-weight: 300;
+  letter-spacing: .5px;
+
+}
+
+h5{
+  font-family: "Roboto";
+  color: #A081CF;
+  font-size: 18px;
+  text-align:right;
+  font-weight: 500;
+  letter-spacing: .5px;
+
+
+}
+
+h6{
+  font-family: "Roboto";
+  color: #774BAF;
+  font-size: 1.2rem;
+  text-align:right;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding-right: 250px;
+}
+
+
+.no-margin{
+  margin: 0;
+}
+
+.text-maincolor{
+  color: #774BAF;
+}
+.text-blue{
+  color: #237EEE;
+}
+.text-yellow{
+  color: #F4AD0F;
+}
+
+
+/* ==========================================================================
+Header Stytles
+========================================================================== */
+header.masthead {
+    background:url('../img/home.svg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 95vh;
+    margin: 0  auto;
+}
+
+.header-text{
+  margin: 0 auto;
+  padding-top: 80px;
+    position: relative;
+}
+
+
+.header-button{
+  width: auto;
+  height: 50px;
+  border: solid 1.5px #774BAF;
+  margin: 0 auto;
+  display: block;
+  background-color: #fff;
+  padding: 0px 30px 0px 30px;
+  margin-top: 80px;
+  color: #774BAF;
+  text-decoration: none;
+}
+
+ .header-button:hover{
+  background-color: #774BAF;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.nodecor:hover {
+  text-decoration: none;
+}
+/*----------------------------------- subpage*/
+header.classes-head {
+    background: #774BAF;
+    height: 60vh;
+    margin: 0  auto;
+}
+header.seminar-head {
+    background: #237EEE;
+    height: 60vh;
+    margin: 0  auto;
+}
+
+.img-align-center{
+  margin: 0 auto;
+  display: block;
+}
+.margin-top{
+  margin-top: 40px;
+  display: block;
+}
+
+/* ==========================================================================
+Navbar
+========================================================================== */
+nav{
+  background-color: #fff;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 1rem;
+
+}
+.navbar-nav .active>.nav-link{
+  color: #774BAF;
+}
+.nav-link{
+  color: #8C8C8C;
+  margin-left: 15px;
+}
+.nav-link:hover{
+  color: #774BAF;
+}
+/*----------------------------------- subnav-purple*/
+.classes-nav-bg{
+  background-color: #774BAF;
+}
+
+.navbar-nav .active-sub>.nav-link{
+  color: #FFCC33;
+}
+.nav-item-sub .nav-link{
+  color: #FFFFFF;
+}
+.nav-item-sub .nav-link:hover{
+  color: #FFCC33;
+}
+
+/*----------------------------------- subnav-blue*/
+.seminar-nav-bg{
+  background-color: #237EEE;
+}
+
+
+
+/* ==========================================================================
+Main-Home
+========================================================================== */
+section{
+  /*margin: 100px 0;*/
+}
+
+p{
+  color: #616161;
+}
+
+a{
+  text-decoration: none;
+}
+.para-center{
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0.58px;
+}
+
+.para-right{
+  text-align:right;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.58px;
+}
+
+.para-left{
+  text-align:left;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.58px;
+}
+
+.photo-wrapper{
+display: block;
+margin: 0 auto;
+border-radius: 50%;
+border: 10px solid #A081C7;
+
+
+}
+
+.left-align{
+  text-align: left;
+}
+
+.center-align{
+  text-align: center;
+}
+.dark-gray{
+  color: #545454;
+}
+.letter-spacing-05{
+  letter-spacing: .5px;
+}
+.tx-wegiht-mid{
+  font-weight: 400;
+}
+.service-box{
+  width: 400px;
+  height: 500px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 17px 0 rgba(183,181,176,0.26);
+  border-radius: 8px;
+  padding: 80px 50px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.contact{
+    display: block;
+    background: #eb01a5;
+  background-image: url("../img/home_contact.svg"); /* fallback */
+  background-image: url("../img/home_contact.svg"), linear-gradient(#7045A7, #FFFFFF); /* W3C */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 500px;
+    margin-bottom: 0;
+    padding-top: 100px;
+}
+
+.contact h4{
+  font-weight: 500;
+}
+.contact h5{
+  font-weight: 300;
+}
+.no-padding{
+  padding: 0 0 0 0;
+}
+.teacher-name{
+  font-weight: 500;
+}
+.education-bio{
+  margin-top: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.service-box h4{
+font-weight: 500;}
+.service-box h5{
+  line-height: 35px;
+}
+
+.hamburger{
+  background-color: pink;
+  color: blue;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+ .direction-button{
+  width: auto;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  background-color: #774BAF;
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 50px 0px 50px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Roboto";
+  font-weight: 300;
+  border: none;
+  text-transform:none;
+
+
+
+}
+ .direction-button:hover{
+  background-color: #774BAF;
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+}
+
+.contact-info{
+  color:#FFF;
+  letter-spacing: 1px;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.inquiry{
+  color:#774BAF;
+  margin-top: 30pxpx;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+/* Modal Content */
+#myModal .modal-dialog2{
+  width: 75%;
+  margin:  0 auto;
+}
+#map {
+ height: 200px;
+ width: 30%;
+}
+
+/*.modal-content {
+  background-color: #fefefe;
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}*/
+
+
+/* The Close Button */
+/*
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.close:hover, .close:focus {
+  color: #35C1F9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 16px 20px 16px;
+  background-color: #188EF0;
+  color: white;
+  position: relative;
+}
+
+.modal-body {
+  position: absolute;
+  padding: 20px 16px;
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+}*/
+
+
+/*------------------------------------ sub-buttons*/
+
+a .rsvp-button{
+  width: auto;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  background-color: #237EEE;
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 50px 0px 50px;
+  margin-top: 80px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Roboto";
+  font-weight: 300;
+  border: none;
+
+}
+a .rsvp-button:hover{
+  background-color: #237EEE;
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+}
+
+/* ----------------------------------------
+Form
+------------------------------------------- */
+form{
+	margin: 0 auto;
+}
+form input, textarea{
+	display: block;
+	border:none;
+	width: 90%;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+  color: #EDEDED;
+  font-size: 15px;
+}
+
+form button{
+  display: block;
+	border:none;
+	width: 90%;
+	padding: 10px;
+	margin: 0 auto;
+  background-color: #774BAF;
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+textarea{
+	height: 200px;
+}
+input:focus {
+	outline: none !important;
+	 border-color: #774BAF;
+	 /*box-shadow: 0 0 5px pink;*/
+}
+
+textarea:focus {
+	outline: none !important;
+	 border-color: #774BAF;
+	 /*box-shadow: 5px pink;*/
+}
+
+/* ==========================================================================
+Subpage
+========================================================================== */
+ul{
+  color: #616161;
+  letter-spacing: .5px;
+}
+li{
+  margin-bottom: 10px;
+}
+
+.sub-heading-box{
+  position:relative;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+
+
+}
+
+.sub-heading-position{
+  position: absolute;
+  right: 47%;
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  display: block;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.el-braket{
+  margin: 0 auto;
+  top: -70%;
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid #774BAF;
+  border-right: 2px solid #774BAF;
+  width: 37px;
+  height: 73px;
+  z-index: 1;
+  right: -37%;
+}
+.sub-heading-position-seminar{
+  position: absolute;
+  right: 32%;
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  display: block;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+.el-braket-seminar{
+  margin: 0 auto;
+  top: -70%;
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid #237EEE;
+  border-right: 2px solid #237EEE;
+  width: 37px;
+  height: 73px;
+  z-index: 1;
+  right: -25%;
+}
+
+
+.image-center{
+  display: block;
+  margin: 0 auto;
+}
+.margin-top-20{
+  margin-top: 20px;
+}
+
+.margin-bottom-50{
+  display: block;
+  margin-bottom: 50px;
+}
+.margin-bottom{
+  display: block;
+  margin-bottom: 150px;
+}
+
+.margin-top-100{
+  margin-top: 100px;
+}
+.margin-bottom-100{
+  margin-bottom: 100px;
+}
+.margin-top-200{
+  margin-top: 200px;
+}
+.margin-bottom-200{
+  margin-bottom: 200px;
+}
+
+.divider{
+  border: 1px solid #237EEE;
+  width: 80%;
+  margin: 0 auto;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+.seminar-description{
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #237EEE;
+}
+
+/*----------------------------- table*/
+table, th, td {
+border: 2px solid #774BAF;
+border-collapse: collapse;
+}
+th, td {
+padding: 10px;
+text-align: center;
+color:#774BAF;
+}
+
+th{
+  letter-spacing: .5px;
+}
+td {
+  color: #616161;
+}
+
+.table-wrapper{
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+
+}
+
+/*-----------------------------flexbox*/
+
+
+.seminar-flex-wrapper{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-box-wrapper{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.flex-box-top{
+  display:block;
+  width: 100%;
+  height: 20%;
+  background-color: #1C72DB;
+  padding: 20px 20px;
+    color: #FFF;
+}
+.flex-box-bottom{
+  display:block;
+  width: 100%;
+  height: 80%;
+  background-color: #237EEE;
+  padding: 50px 20px;
+  color: #FFF;
+
+}
+
+/* ==========================================================================
+Footer Styles
+========================================================================== */
+
+footer{
+  display: block;
+  margin: auto 0;
+  background-color: #774BAF;
+  padding: 30px 0 30px 0;
+}
+
+footer h5{
+  color: #FFF;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 30px;
+
+}
+
+footer p{
+  font: "Roboto";
+  color:#FFF;
+  font-weight: 300;
+  letter-spacing: .5px;
+  margin-bottom: 50px;
+
+}
+.seminar-footer-bg{
+  background-color: #237EEE;
+}
+.copyright{
+  font: "Roboto";
+  color:#FFF;
+  font-weight: 300;
+  letter-spacing: .5px;
+  margin-bottom: 0;
+}
+
+
+
+/* ==========================================================================
+Responsive Styles
+========================================================================== */
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+@media (min-width: 992px) {
+    header.masthead > .overlay {
+        padding: 10rem 0;
+    }
+}
