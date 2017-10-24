@@ -20,6 +20,7 @@
 
   <body>
 
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -148,7 +149,9 @@ I am only passionately curious." </h1>
               </br>Cupertino, CA 95014</p>
 
 
-  <button type="button" class="direction-button" data-toggle="modal" data-target="#myModal">Direction</button>
+  <!-- <button id="myBtn" class="direction-button">Direction</button> -->
+
+  <button id="myBtn" type="button">Open Modal</button>
 
               <p class ="contact-info">kaykyungahwoo@gmail.com</br>
 
@@ -183,91 +186,128 @@ office 669-230-4104 | mobile 408-564-9857</p>
 <div class="text-center copyright">© 2017 The Vine Tutoring &copy;Consulting</div>
           </p>
       </div>
-      <!-- /.container -->
-    </footer
+    </footer>
+
+
+    <div id="parent">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <script>
+                        /* CHANGE 4: a nit, you need a callback defined */
+                        function initMap() {
+
+                        };
+
+                        /* CHANGE 5: a function to call to create the map when you want it shown */
+                        function doMap() {
+                            var address = "california,USA";
+                            var myLatlng = new google.maps.LatLng(30.2719771, -97.7475389);
+                            var map1 = new google.maps.Map(document.getElementById("map1"), {
+                                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                zoom: 12,
+                                center: myLatlng
+                            });
+              var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">The Vine Tutoring and Consulting</h1>'+
+              '<div id="bodyContent">'+
+              '<p>The Vine Tutoring and Consulting</p>'+
+              '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+              'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+              '(last visited June 22, 2009).</p>'+
+              '</div>'+
+              '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+
+                            var geocoder = new google.maps.Geocoder();
+                            geocoder.geocode({
+                                "address": address
+                            }, function(results, status) {
+                                if (status == google.maps.GeocoderStatus.OK) {
+                                    var marker = new google.maps.Marker({
+                                        position: results[0].geometry.location,
+                                        map: map1
+                                    });
+                                    map1.setCenter(results[0].geometry.location);
+                                     marker.addListener('click', function() {
+                    infowindow.open(map1, marker);
+                  });
+
+                                }
+                            });
 
 
 
-  <div class="container">
-    <!-- Trigger the modal with a button -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog2">
+                        }
 
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div id="map" class="modal-body">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+                        // CHANGE 6: new var to control the parent
+                        var parent = document.getElementById('parent');
+                        var modal = document.getElementById('myModal');
+
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                        // CHANGE 7: only do this once
+                        var bFirstShow = true;
+
+                        // When the user clicks the button, open the modal
+                        btn.onclick = function() {
+                            parent.style.display = "block";
+                            // New: init the map when you want it shown
+                            if (bFirstShow === true) {
+                                doMap();
+                                bFirstShow = false;
+                            }
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            parent.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target === modal) {
+                                parent.style.display = "none";
+                            }
+                        }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCme5z1igb4eBRp3Dy0PyYsHgJjJJhTcm8&callback=initMap"
+            async defer></script>
+
+
+            <div id="map1" class="map"></div>
         </div>
-
-      </div>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
     </div>
+    </div>
+</div>
 
-  </div>
     <!-- Bootstrap core JavaScript -->
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-     var map;
-
-      // This example displays a marker at the center of Australia.
-      // When the user clicks the marker, an info window opens.
-
-      function initMap() {
-        var uluru = {lat: 37.322482, lng: -122.052315};
-         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: uluru
-        });
-
-        var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">The Vine Tutoring and Consulting</h1>'+
-            '<div id="bodyContent">'+
-            '<p>The Vine Tutoring and Consulting</p>'+
-            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-            '(last visited June 22, 2009).</p>'+
-            '</div>'+
-            '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-          title: 'Uluru (Ayers Rock)'
-        });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      }
-
-
-      $('#myModal').on('shown', function () {
-        console.log('abc');
-          initialize();
-          google.maps.event.trigger(map,"resize");
-          map.setCenter(center);
-      });
-
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCme5z1igb4eBRp3Dy0PyYsHgJjJJhTcm8&callback=initMap">
-    </script>
 
   </body>
 
