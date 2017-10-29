@@ -1,4 +1,10 @@
 
+html{
+  font-size: 16px;
+}
+
+button:focus {outline:0;}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
  /* ==========================================================================
@@ -6,7 +12,7 @@
  ========================================================================== */
 
 body {
-    padding-top: 54px;
+    padding-top: 3.375rem;/*54px*/
     font-family: "roboto";
 }
 
@@ -24,47 +30,47 @@ h1{
   text-align: center;
   font-weight: 600;
   line-height: 3.7rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 
 }
 
 h2{
   font-family: "Open Sans";
   color: #774BAF;
-  font-size: 2.25rem;
+  font-size: 2.25rem; /*21px*/
   text-align: center;
   font-weight: 600;
   line-height: 3.7rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 
 }
 
 h3{  font-family: "Roboto";
   color: #774BAF;
-  font-size: 21px;
+  font-size: 1.3125rem;
   text-align:right;
   font-weight: 400;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 
 }
 
 h4{
   font-family: "Roboto";
   color: #774BAF;
-  font-size: 21px;
+  font-size: 2.25rem;
   text-align:right;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 
 }
 
 h5{
   font-family: "Roboto";
   color: #A081CF;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align:right;
   font-weight: 500;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 
 
 }
@@ -75,8 +81,9 @@ h6{
   font-size: 1.2rem;
   text-align:right;
   font-weight: 400;
-  letter-spacing: .5px;
-  padding-right: 250px;
+  letter-spacing: .03125rem;
+  padding-top: .625rem
+;
 }
 
 
@@ -110,20 +117,21 @@ header.masthead {
 
 .header-text{
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 5rem;
     position: relative;
 }
 
 
 .header-button{
   width: auto;
-  height: 50px;
-  border: solid 1.5px #774BAF;
+  height: 3.125rem;
+  border: solid .09375rem #774BAF;
   margin: 0 auto;
   display: block;
   background-color: #fff;
-  padding: 0px 30px 0px 30px;
-  margin-top: 80px;
+  padding: 0 1.875rem 0 1.875rem
+;
+  margin-top: 5rem;
   color: #774BAF;
   text-decoration: none;
 }
@@ -155,7 +163,7 @@ header.seminar-head {
   display: block;
 }
 .margin-top{
-  margin-top: 40px;
+  margin-top: 2.5rem;
   display: block;
 }
 
@@ -174,7 +182,7 @@ nav{
 }
 .nav-link{
   color: #8C8C8C;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 .nav-link:hover{
   color: #774BAF;
@@ -217,33 +225,33 @@ a{
 }
 .para-center{
   text-align: center;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 300;
-  letter-spacing: 0.58px;
+  letter-spacing: .03625rem;
 }
 
 .para-right{
   text-align:right;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 300;
-  letter-spacing: 0.58px;
+  letter-spacing: .03625rem;
 }
 
 .para-left{
   text-align:left;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
-  letter-spacing: 0.58px;
+  letter-spacing: .03625rem;
 }
 
 .photo-wrapper{
 display: block;
 margin: 0 auto;
 border-radius: 50%;
-border: 10px solid #A081C7;
-
-
+border: .625rem solid #A081C7;
+margin-bottom: 3.125rem; /*50px*/
 }
+
 
 .left-align{
   text-align: left;
@@ -256,20 +264,29 @@ border: 10px solid #A081C7;
   color: #545454;
 }
 .letter-spacing-05{
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 }
 .tx-wegiht-mid{
   font-weight: 400;
 }
+
+.service-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 0;
+  margin-top: 3.5rem;
+}
 .service-box{
-  width: 400px;
-  height: 500px;
+  width: 90%;
+  min-height: 63vh;
   background: #FFFFFF;
-  box-shadow: 0 2px 17px 0 rgba(183,181,176,0.26);
-  border-radius: 8px;
-  padding: 80px 50px;
+  box-shadow: 0 .125rem 1.0625rem 0 rgba(183,181,176,0.26);
+  border-radius: .5rem;
+  padding: 5rem 3.125rem;
   display: block;
   margin: 0 auto;
+  margin-top: 3.5rem;
 
 }
 
@@ -280,9 +297,11 @@ border: 10px solid #A081C7;
   background-image: url("../img/home_contact.svg"), linear-gradient(#7045A7, #FFFFFF); /* W3C */
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-bottom: 500px;
+    background-size: contain;
+    padding-bottom: 31.25rem
+;
     margin-bottom: 0;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .contact h4{
@@ -298,37 +317,105 @@ border: 10px solid #A081C7;
   font-weight: 500;
 }
 .education-bio{
-  margin-top: 15px;
+  margin-top: 0.9375rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 .service-box h4{
-font-weight: 500;}
+font-weight: 500;
+font-size: 2rem;
+}
 .service-box h5{
-  line-height: 35px;
+  line-height: 2.1875rem;
 }
 
-.hamburger{
-  background-color: pink;
-  color: blue;
+
+#hamburger{
+  /*background-color: pink;*/
+  width: 30px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
+
+#hamburger span{
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #774BAF;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+
+#hamburger span:nth-child(1) {
+  top: 4px;
+}
+
+#hamburger span:nth-child(2) {
+  top: 12px;
+}
+
+#hamburger span:nth-child(3) {
+  top: 20px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 1.125rem;/*18px*/
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -3.75rem;/*-60px*/
+}
+
+#hamburger.open span:nth-child(3) {
+  top: 1.125rem;/*18px*/
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
  .direction-button{
   width: auto;
-  height: 40px;
+  height:2.5rem;/*40px*/
   margin: 0 auto;
   display: block;
   background-color: #774BAF;
   color: #fff;
   text-decoration: none;
-  padding: 0px 50px 0px 50px;
-  margin-top: 30px;
+  padding: 0 3.125rem 0 3.125rem;/*50px*/
+  margin-top: 1.875rem;/*30px*/
   text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 1.25rem;/*20px*/
+  letter-spacing: .0625rem;
   font-family: "Roboto";
   font-weight: 300;
   border: none;
@@ -343,40 +430,44 @@ Buttons
   text-decoration: none;
   opacity: .9;
 }
+.contact-title h4{
+  font-size: 1.75rem;
+
+}
 
 .contact-info{
   color:#FFF;
-  letter-spacing: 1px;
-  margin-top: 100px;
+  letter-spacing: .0625rem;
+  margin-top: 6.25rem;
   text-align: center;
-  line-height: 30px;
-  font-size: 16px;
+  line-height: 1.875rem;/*30px*/
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .inquiry{
   color:#774BAF;
-  margin-top: 30pxpx;
+  margin-top: 1.875rem;/*30px*/
   text-align: center;
-  line-height: 25px;
-  font-size: 14px;
+  line-height: 1.5625rem;/*25px*/
+  font-size: 0.875rem;/*14px*/
   font-weight: 300;
   font-style: italic;
 }
 
 
 /* Modal Content */
+/* CHANGE 1: create a hidden parent to the modal */
 #parent {
     display: none;
 }
 /* The Modal (background) - CHANGE 2, removed display none */
-
-.modal {
+.modal2 {
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 1000;
     /* Sit on top */
-    padding-top: 100px;
+    padding-top: 6.25rem;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -392,14 +483,13 @@ Buttons
     /* Black w/ opacity */
 }
 /* Modal Content */
-
-.modal-content {
+.modal-content2 {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
     width: 80%;
+    height: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -407,10 +497,9 @@ Buttons
     animation-duration: 0.4s
 }
 /* Add Animation */
-
 @-webkit-keyframes animatetop {
     from {
-        top: -300px;
+        top: -18.75rem;/* -300px*/
         opacity: 0
     }
     to {
@@ -418,10 +507,9 @@ Buttons
         opacity: 1
     }
 }
-
 @keyframes animatetop {
     from {
-        top: -300px;
+        top:  -18.75rem;/* -300px*/
         opacity: 0
     }
     to {
@@ -430,57 +518,66 @@ Buttons
     }
 }
 /* The Close Button */
-
-.close {
+.close2 {
     color: white;
     float: right;
-    font-size: 28px;
+    font-size: 1.75rem; /*28px*/
     font-weight: bold;
+    line-height: 1;
 }
-
-.close:hover,
-.close:focus {
+.close2:hover,
+.close2:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-.modal-header {
+.modal-header2 {
+  height: 7%;
+    padding: .3125rem 1rem;/* 5px 16px*/
+    background-color: #F4AD0F;
+    color: white;
+}
+.modal-body2 {
+    width: 100%;
+    height: 100%;
+}
+/*.modal-footer2 {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+}*/
+
+      .map {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+#firstHeading{
+  font-size: 1.25rem;/*20px*/
 }
-
-.modal-body {
-    padding: 2px 16px;
+.marker-address{
+  font-size: 1rem;/*20px*/
+  text-align: center;
+  letter-spacing: .03125rem;/*.5px*/
 }
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+#marker-direction{
+  text-align: right;
 }
-
-    .map {
-        width: 430px;
-        height: 150px;
-    }
-
 /*------------------------------------ sub-buttons*/
 
 a .rsvp-button{
   width: auto;
-  height: 40px;
+  height: 2.5rem;/*40px*/
   margin: 0 auto;
   display: block;
   background-color: #237EEE;
   color: #fff;
   text-decoration: none;
-  padding: 0px 50px 0px 50px;
-  margin-top: 80px;
+  padding: 0 3.125rem 0 3.125rem;/* 50px*/
+  margin-top: 5rem; /*80px*/
   text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 1.25rem;/* 20px*/
+  letter-spacing: .0625rem;
   font-family: "Roboto";
   font-weight: 300;
   border: none;
@@ -503,25 +600,25 @@ form input, textarea{
 	display: block;
 	border:none;
 	width: 90%;
-	padding: 10px;
+	padding: .625rem;
 	margin: 0 auto;
-	margin-bottom: 15px;
+	margin-bottom: 0.9375rem;/*15px*/
   color: #EDEDED;
-  font-size: 15px;
+  font-size: 0.9375rem;/*15px*/
 }
 
 form button{
   display: block;
 	border:none;
 	width: 90%;
-	padding: 10px;
+	padding: .625rem;
 	margin: 0 auto;
   background-color: #774BAF;
   color: #FFF;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.125rem;/*18px*/
   font-weight: 400;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 }
 
 textarea{
@@ -544,10 +641,10 @@ Subpage
 ========================================================================== */
 ul{
   color: #616161;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 }
 li{
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
 }
 
 .sub-heading-box{
@@ -555,11 +652,12 @@ li{
   display: block;
   margin: 0 auto;
   width: 50%;
-  height: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 100px;
-  margin-bottom: 70px;
+  height: 3.125rem;/*50px*/
+  padding-top: 3.125rem;/*50px*/
+  padding-bottom: 3.125rem;/*50px*/
+  margin-top: 6.25rem;
+  margin-bottom: 4.375rem;/* 70px*/
+
 
 
 }
@@ -571,7 +669,7 @@ li{
   text-align: center;
   width: auto;
   display: block;
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;/* 70px*/
   z-index: 2;
 }
 
@@ -582,8 +680,8 @@ li{
   display: block;
   border-bottom: 2px solid #774BAF;
   border-right: 2px solid #774BAF;
-  width: 37px;
-  height: 73px;
+  width: 2.3125rem;/*37px*/
+  height: 4.5625rem;
   z-index: 1;
   right: -37%;
 }
@@ -594,7 +692,7 @@ li{
   text-align: center;
   width: auto;
   display: block;
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;/* 70px*/
   z-index: 2;
 }
 .el-braket-seminar{
@@ -604,8 +702,8 @@ li{
   display: block;
   border-bottom: 2px solid #237EEE;
   border-right: 2px solid #237EEE;
-  width: 37px;
-  height: 73px;
+  width: 2.3125rem;/*37px*/
+  height: 4.5625rem;/*73px*/
   z-index: 1;
   right: -25%;
 }
@@ -616,42 +714,42 @@ li{
   margin: 0 auto;
 }
 .margin-top-20{
-  margin-top: 20px;
+  margin-top: 1.25rem;/*20px*/
 }
 
 .margin-bottom-50{
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;/*50px*/
 }
 .margin-bottom{
   display: block;
-  margin-bottom: 150px;
+  margin-bottom: 9.375rem;/*150px*/
 }
 
 .margin-top-100{
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 .margin-bottom-100{
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 .margin-top-200{
-  margin-top: 200px;
+  margin-top: 12.5rem;
 }
 .margin-bottom-200{
-  margin-bottom: 200px;
+  margin-bottom: 12.5rem;
 }
 
 .divider{
   border: 1px solid #237EEE;
   width: 80%;
   margin: 0 auto;
-  margin-top:30px;
-  margin-bottom: 30px;
+  margin-top:1.875rem;/*30px*/
+  margin-bottom: 1.875rem;/*30px*/
 }
 .seminar-description{
   font-weight: 400;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 1.25rem;/* 20px*/
+  font-size: 1.25rem;/* 20px*/
   color: #237EEE;
 }
 
@@ -661,13 +759,13 @@ border: 2px solid #774BAF;
 border-collapse: collapse;
 }
 th, td {
-padding: 10px;
+padding: .625rem;
 text-align: center;
 color:#774BAF;
 }
 
 th{
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
 }
 td {
   color: #616161;
@@ -677,7 +775,7 @@ td {
   display: block;
   max-width: 90%;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 9.375rem;/*150px*/
 
 }
 
@@ -704,7 +802,7 @@ td {
   width: 100%;
   height: 20%;
   background-color: #1C72DB;
-  padding: 20px 20px;
+  padding: 0.75rem 1.25rem;/*12/20*/
     color: #FFF;
 }
 .flex-box-bottom{
@@ -712,7 +810,7 @@ td {
   width: 100%;
   height: 80%;
   background-color: #237EEE;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;/*50/20*/
   color: #FFF;
 
 }
@@ -725,16 +823,17 @@ footer{
   display: block;
   margin: auto 0;
   background-color: #774BAF;
-  padding: 30px 0 30px 0;
+  padding: 1.875rem 0 1.875rem 0;/*30/30*/
+
 }
 
 footer h5{
   color: #FFF;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  margin-top: 30px;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  margin-top: 1.875rem;
 
 }
 
@@ -742,8 +841,8 @@ footer p{
   font: "Roboto";
   color:#FFF;
   font-weight: 300;
-  letter-spacing: .5px;
-  margin-bottom: 50px;
+  letter-spacing: .03125rem;
+  margin-bottom: 3.125rem;
 
 }
 .seminar-footer-bg{
@@ -753,7 +852,7 @@ footer p{
   font: "Roboto";
   color:#FFF;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: .03125rem;
   margin-bottom: 0;
 }
 
@@ -763,14 +862,73 @@ footer p{
 Responsive Styles
 ========================================================================== */
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
     body {
-        padding-top: 56px;
+        padding-top: 3.5rem;
     }
-}
-
-@media (min-width: 992px) {
     header.masthead > .overlay {
         padding: 10rem 0;
     }
+}
+
+@media (max-width: 767px) {
+    html  {
+        font-size: 0.9375rem;
+    }
+    .margin-top-100{
+      margin-top: 0;
+    }
+    #teacher-photo{
+      margin-top: 5rem;
+    }
+    #about-teacher h4{
+      text-align: center;
+    }
+    #about-teacher h5{
+      text-align: center;
+    }
+
+    #about-teacher p{
+      text-align: center;
+    }
+    .contact{
+      background-position: 0 95%;
+    }
+    .el-braket{
+      display: none;
+    }
+    .el-braket-seminar{
+      display: none;
+    }
+
+    .sub-heading-position{
+      right: 25%;
+    }
+
+    .sub-heading-position-seminar{
+      right: 0%;
+    }
+
+    h2 .sub-heading-position-seminar{
+    }
+}
+
+
+@media (max-width: 575px) {
+    html {
+        font-size: 0.8125rem;
+    }
+    header.masthead {
+
+        height: 110vh;
+    }
+    .sub-heading-position-seminar{
+      right: 0%;
+    }
+
+    /*.margin-top-100{
+      margin-top: 0;
+    }*/
+
+
 }
