@@ -26,7 +26,7 @@ Text Styles
 h1{
   font-family: "Open Sans";
   color: #774BAF;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
   line-height: 3.7rem;
@@ -117,8 +117,9 @@ header.masthead {
 
 .header-text{
   margin: 0 auto;
-  padding-top: 5rem;
-    position: relative;
+  padding-top: 6.5rem;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -161,11 +162,21 @@ header.seminar-head {
 .img-align-center{
   margin: 0 auto;
   display: block;
+  padding-top: 1.75rem;
 }
 .margin-top{
   margin-top: 2.5rem;
   display: block;
 }
+
+.sub-header-text{
+  margin: 0 auto;
+  padding-top: 4.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+
 
 /* ==========================================================================
 Navbar
@@ -175,10 +186,11 @@ nav{
   font-family: "roboto";
   font-weight: 400;
   font-size: 1rem;
-
 }
+
 .navbar-nav .active>.nav-link{
   color: #774BAF;
+  display: block;
 }
 .nav-link{
   color: #8C8C8C;
@@ -207,6 +219,78 @@ nav{
   background-color: #237EEE;
 }
 
+/*-----------------------------------hamburger*/
+
+#hamburger{
+  display: none;
+  /*background-color: pink;*/
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  padding-top: .125rem;
+}
+
+#hamburger span{
+  display: block;
+  position: absolute;sub-heading-position
+  height: 4px;
+  width: 100%;
+  background: #774BAF;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+
+#hamburger span:nth-child(1) {
+  top: 4px;
+}
+
+#hamburger span:nth-child(2) {
+  top: 12px;
+}
+
+#hamburger span:nth-child(3) {
+  top: 20px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 1.125rem;/*18px*/
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -3.75rem;/*-60px*/
+}
+
+#hamburger.open span:nth-child(3) {
+  top: 1.125rem;/*18px*/
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
 
 
 /* ==========================================================================
@@ -328,75 +412,36 @@ font-size: 2rem;
 .service-box h5{
   line-height: 2.1875rem;
 }
+/*--------------------- form*/
 
-
-#hamburger{
-  /*background-color: pink;*/
-  width: 30px;
-  height: 40px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-#hamburger span{
+.input-box:focus {
   display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: #774BAF;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+    background-color: #E3DAF1;
+}
+.input-box[type="text"] {
+    font-size:.875rem;
+    color: #444444
 }
 
-
-
-#hamburger span:nth-child(1) {
-  top: 4px;
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #926FBF;
+}
+:-moz-placeholder { /* older Firefox*/
+  font-size: 14px;
+  color: #926FBF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px;
+  color: #926FBF;
+}
+:-ms-input-placeholder {
+  font-size: 14px;
+  color: #926FBF;
 }
 
-#hamburger span:nth-child(2) {
-  top: 12px;
-}
-
-#hamburger span:nth-child(3) {
-  top: 20px;
-}
-
-#hamburger.open span:nth-child(1) {
-  top: 1.125rem;/*18px*/
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-#hamburger.open span:nth-child(2) {
-  opacity: 0;
-  left: -3.75rem;/*-60px*/
-}
-
-#hamburger.open span:nth-child(3) {
-  top: 1.125rem;/*18px*/
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+.submit{
+  cursor: pointer;
 }
 
 
@@ -431,7 +476,7 @@ Buttons
   opacity: .9;
 }
 .contact-title h4{
-  font-size: 1.75rem;
+  font-size: 1.50rem;
 
 }
 
@@ -644,7 +689,7 @@ ul{
   letter-spacing: .03125rem;
 }
 li{
-  margin-bottom: .625rem;
+  /*margin-bottom: .625rem;*/
 }
 
 .sub-heading-box{
@@ -657,20 +702,21 @@ li{
   padding-bottom: 3.125rem;/*50px*/
   margin-top: 6.25rem;
   margin-bottom: 4.375rem;/* 70px*/
-
-
-
 }
 
 .sub-heading-position{
   position: absolute;
-  right: 47%;
+  right: 35%;
   margin: 0 auto;
   text-align: center;
   width: auto;
   display: block;
   margin-bottom: 4.375rem;/* 70px*/
   z-index: 2;
+}
+
+.sub-header-img{
+
 }
 
 .el-braket{
@@ -687,7 +733,7 @@ li{
 }
 .sub-heading-position-seminar{
   position: absolute;
-  right: 32%;
+  right: 25%;
   margin: 0 auto;
   text-align: center;
   width: auto;
@@ -788,13 +834,14 @@ td {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .flex-box-wrapper{
-  width: 32%;
+  width: 31%;
   display: flex;
   flex-direction: column;
-
+  /*padding-top: 2rem;*/
 }
 
 .flex-box-top{
@@ -869,17 +916,42 @@ Responsive Styles
     header.masthead > .overlay {
         padding: 10rem 0;
     }
+nav{
+    background: rgba(255,255,255,0.90);
+  }
+
+  .classes-nav-bg{
+  background: rgba(119,75,175,0.90);
+  }
+    #hamburger{
+      display: block;
+    }
+  #nav-bg-perple{
+    display: block;
+    position: absolute;
+    top:0;
+    z-index: -1000;
+    background-color: #774BAF;
+    width: 100%;
+    height: 20vh;
+
+  }
 }
+
+
 
 @media (max-width: 767px) {
     html  {
         font-size: 0.9375rem;
     }
+
+
     .margin-top-100{
       margin-top: 0;
     }
     #teacher-photo{
-      margin-top: 5rem;
+      margin: 4rem 1.5rem 0 1.5rem;
+
     }
     #about-teacher h4{
       text-align: center;
@@ -890,16 +962,17 @@ Responsive Styles
 
     #about-teacher p{
       text-align: center;
+      padding: 0 15px;
     }
     .contact{
       background-position: 0 95%;
     }
-    .el-braket{
-      display: none;
-    }
-    .el-braket-seminar{
-      display: none;
-    }
+      .el-braket{
+        display: none;
+      }
+      .el-braket-seminar{
+        display: none;
+      }
 
     .sub-heading-position{
       right: 25%;
@@ -911,6 +984,22 @@ Responsive Styles
 
     h2 .sub-heading-position-seminar{
     }
+
+    .sub-heading-box{
+      margin-top: 6.25rem;
+    }
+
+    .seminar-description{
+      text-align: center;
+      margin-top: 2rem;
+
+    }
+
+    .flex-box-wrapper{
+      width: 48%;
+      padding-bottom: 2.5rem;
+    }
+
 }
 
 
@@ -926,9 +1015,22 @@ Responsive Styles
       right: 0%;
     }
 
-    /*.margin-top-100{
-      margin-top: 0;
-    }*/
+    header.classes-head {
+        height: 52vh;
+    }
 
+header.seminar-head{
 
+  height: 52vh;
+
+}
+
+.flex-box-wrapper{
+  width: 100%;
+
+  padding: 1.25rem 3rem;
+}
+
+.img-margin-top{
+  margin-top: 5.5rem;
 }
