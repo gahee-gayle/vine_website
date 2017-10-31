@@ -223,7 +223,6 @@ nav{
 
 #hamburger{
   display: none;
-  /*background-color: pink;*/
   width: 30px;
   height: 30px;
   position: relative;
@@ -241,7 +240,7 @@ nav{
 
 #hamburger span{
   display: block;
-  position: absolute;sub-heading-position
+  position: absolute;
   height: 4px;
   width: 100%;
   background: #774BAF;
@@ -689,7 +688,7 @@ ul{
   letter-spacing: .03125rem;
 }
 li{
-  /*margin-bottom: .625rem;*/
+  margin-bottom: .625rem;
 }
 
 .sub-heading-box{
@@ -923,9 +922,11 @@ nav{
   .classes-nav-bg{
   background: rgba(119,75,175,0.90);
   }
-    #hamburger{
+
+  #hamburger{
       display: block;
     }
+
   #nav-bg-perple{
     display: block;
     position: absolute;
@@ -944,7 +945,6 @@ nav{
     html  {
         font-size: 0.9375rem;
     }
-
 
     .margin-top-100{
       margin-top: 0;
